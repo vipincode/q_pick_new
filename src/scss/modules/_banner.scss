@@ -1,0 +1,31 @@
+// ============================================================================
+//                 NAVBAR [ALRGE]
+// ============================================================================
+
+.banner {
+    .slider-item {
+        height: calc(100vh - 106px);
+        background-position: center;
+        background-size: cover;
+        article {
+            h2 {
+                font-size: em(32px);
+                margin-bottom: 15px;
+                font-weight: $font-weight--lg;
+                @include mq(lg) {
+                    font-size: em(42px);
+                }
+            }
+            p {
+                font-size: em(18px);
+                line-height: (30px/18px);
+                margin-bottom: 34px;
+            }
+            @include mq('lg') {
+                padding-top: 120px;
+                width: 70%;
+                max-width: 700px;
+            }
+        }
+    }
+}
