@@ -22,12 +22,11 @@
         box-shadow: 0 0 10px rgba($black, 0.07);
         @extend %transition;
         h3 {
-            font-size: em(19px);
-            line-height: (25px/19px);
-            margin-bottom: em(9px, 19px);
+            font-size: em(18px);
+            line-height: (25px/18px);
+            margin-bottom: em(9px, 18px);
             font-weight: $font-weight--lg;
         }
-
         a {
             color: $black;
         }
@@ -72,133 +71,137 @@
         }
         @extend %transition;
     }
+    .qboucher {
+        @extend %center;
+        @extend %top-50;
+    }
 }
 
 // ==========================================================================
 //               HOME [WHSY US]
 // ==========================================================================
 
-#whyus {
-    background-image: url('../../images/whyus.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+// #whyus {
+//     background-image: url('../../images/whyus.jpg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
 
-.whyus {
-  position: relative;
-  padding: 50px 0px;
-  @include mq('xxl') {
-      padding: 80px 0px;
-  }
-  @include mq('xll') {
-    padding: 100px 0px;
-}
-  &-heading {
-      @extend %top;
-      p {
-        font-size: em(17px);
-        font-weight: $font-weight--sm;
-        line-height: em(35px, 17px);
-        @extend %top-50;
-      }
-  }
-  &-content {
-      p {
-          margin-top: 15px;
-          font-size: em(16px);
-          line-height: (28px/16px);
-      }
-  }
-}
+// .whyus {
+//   position: relative;
+//   padding: 50px 0px;
+//   @include mq('xxl') {
+//       padding: 80px 0px;
+//   }
+//   @include mq('xll') {
+//     padding: 100px 0px;
+// }
+//   &-heading {
+//       @extend %top;
+//       p {
+//         font-size: em(17px);
+//         font-weight: $font-weight--sm;
+//         line-height: em(35px, 17px);
+//         @extend %top-50;
+//       }
+//   }
+//   &-content {
+//       p {
+//           margin-top: 15px;
+//           font-size: em(16px);
+//           line-height: (28px/16px);
+//       }
+//   }
+// }
 
 // ==========================================================================
 //               HOME [FEATURE]
 // ==========================================================================
 
-#why-feature {
-    padding: 80px 0px 80px;
-    .heading {
-        width: 100%;
-        margin-bottom: 65px;
-    }
-}
+// #why-feature {
+//     padding: 80px 0px 80px;
+//     .heading {
+//         width: 100%;
+//         margin-bottom: 65px;
+//     }
+// }
 
-.why-feature {
-    &--card {
-        background-color: $white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba($black, 0.07);
-        h3 {
-            font-size: em(19px);
-            line-height: (25px/19px);
-            margin-bottom: em(9px, 19px);
-            font-weight: $font-weight--lg;
-        }
-        @extend %transition;
-    }
-}
+// .why-feature {
+//     &--card {
+//         background-color: $white;
+//         padding: 20px;
+//         box-shadow: 0 0 10px rgba($black, 0.07);
+//         h3 {
+//             font-size: em(19px);
+//             line-height: (25px/19px);
+//             margin-bottom: em(9px, 19px);
+//             font-weight: $font-weight--lg;
+//         }
+//         @extend %transition;
+//     }
+// }
 
 // ==========================================================================
 //               HOME [MODULE]
 // ==========================================================================
 
-#module {
-    background-color: $bg-color;
-    padding: 50px 0px 50px
-}
+// #module {
+//     background-color: $bg-color;
+//     padding: 50px 0px 50px
+// }
 
-.module {
-    .heading {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    &--bg {
-        img {
-            margin-top: 100px;
-        }
-    }
-    &-card {
-        background-color: $white;
-        padding: 25px;
-        @extend %center;
-        @include flexy($dir: column);
-        flex: 1;
-        &--main {
-            @include flexy();
-        }
+// .module {
+//     .heading {
+//         width: 100%;
+//         margin-bottom: 50px;
+//     }
+//     &--bg {
+//         img {
+//             margin-top: 100px;
+//         }
+//     }
+//     &-card {
+//         background-color: $white;
+//         padding: 25px;
+//         @extend %center;
+//         @include flexy($dir: column);
+//         flex: 1;
+//         &--main {
+//             @include flexy();
+//         }
 
-        h3 {
-            font-size: em(18px);
-        }
-        @extend %transition;
-    }
-}
+//         h3 {
+//             font-size: em(18px);
+//         }
+//         @extend %transition;
+//     }
+// }
 
 // ==========================================================================
 //               HOME [INTERFACE]
 // ==========================================================================
 
-#interface {
-    padding: 50px 0px 50px;
-}
+// #interface {
+//     padding: 50px 0px 50px;
+// }
 
-.interface {
-    .heading {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    &-card {
-        background-color: $white;
-        padding: 25px;
-        box-shadow: 0 0 10px rgba($black, 0.06);
-        @extend %center;
-        h3 {
-            font-size: em(18px);
-        }
-        @extend %transition;
-    }
-}
+// .interface {
+//     .heading {
+//         width: 100%;
+//         margin-bottom: 50px;
+//     }
+//     &-card {
+//         background-color: $white;
+//         padding: 25px;
+//         box-shadow: 0 0 10px rgba($black, 0.06);
+//         @extend %center;
+//         h3 {
+//             font-size: em(18px);
+//         }
+//         @extend %transition;
+//     }
+// }
 
 
 
@@ -271,14 +274,56 @@
 }
 
 // ==========================================================================
+//               HOME [CONTACT US]
+// ==========================================================================
+
+#contact {
+    @extend %top-50;
+    @extend %bottom-80;
+    .heading {
+        @extend %center;
+        @extend %bar-center;
+    }
+}
+
+.contact {
+    @extend %top-80;
+    form {
+        input, textarea {
+            margin-bottom: 0;
+        }
+        label {
+            font-size: em(15px);
+            display: block;
+            margin-top: 15px;
+            font-weight: $font-weight--md;
+        }
+        span {
+            font-size: em(13px);
+        }
+        .btn {
+           @extend %top-20;
+        }
+    }
+}
+
+// ==========================================================================
 //               HOME [BOOK DEMO]
 // ==========================================================================
 
 #demo {
-    @extend %top-110;
+    @extend %top-80;
     @extend %bottom-80;
-    .btn {
-        @extend %top-30;
+    article {
+        @include mq('lg') {
+            margin-top: 80px;
+        }
+        @include mq('xl') {
+            margin-top: 110px;
+        }
+        a {
+            font-size: em(32px)
+        }
     }
 }
 

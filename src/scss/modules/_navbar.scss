@@ -18,6 +18,14 @@
             }
         }
     }
+    @include e('socials') {
+        a {
+            transition: color $transition ease-in;
+            &:hover {
+                color: $color--seconary;
+            }
+        }
+    }
 }
 
 .navbar {
@@ -54,8 +62,8 @@
         }
 
         .btn--navbar {
-            font-size: em(15px);
-            text-transform: uppercase;
+            font-size: em(14px);
+            line-height: (34px/14px);
             background-color: $color--seconary;
             border: $br-radius;
             color: $white;
@@ -64,8 +72,7 @@
         }
     }
 
-    &-sub {
-       
+    &-sub {  
         position: relative;
         @include p-el($el: 'before', $el-width: auto, $el-height: auto) {
             bottom: 0;

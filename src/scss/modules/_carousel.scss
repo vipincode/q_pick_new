@@ -12,7 +12,7 @@
     position: relative;
 }
 .swiper-pagination-bullet {
-    background-color: $color--primary;
+    background-color: $color--seconary;
 }
 .swiper-button-prev {
     @extend %prev-next;
@@ -40,18 +40,6 @@
             .swiper-pagination {
                 bottom: -40px;
             }
-        }
-    }
-}
-
-.why-feature {
-    @extend %swiper-position;
-    margin-top: -20px;
-    .swiper3 {
-        position: initial;
-        padding: 20px 0px;
-        .swiper-pagination {
-            bottom: -30px;
         }
     }
 }

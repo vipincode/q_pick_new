@@ -275,3 +275,38 @@ for(let i = 0; i < drpID.length; i++) {
         drpID[i].nextElementSibling.classList.toggle('toggle');
     })
 }
+
+
+
+// ============================================================
+// HORIZONTAL ACCORDIAN
+// ============================================================
+const accordianID = document.querySelectorAll('.acc__id');
+const accordianContent = document.querySelectorAll('.acc__content');
+
+if(accordianID) {
+    for(let i = 0; i < accordianID.length; i++) {
+        accordianID[i].addEventListener('click', (e) => {
+            const accPanel = e.target.nextElementSibling;
+            if(accPanel.className === 'acc__content acc-active') {
+                e.target.classList.remove('js__active');
+                accPanel.classList.remove('acc-active');
+            } else {
+                _removePlusMisun();
+                _removeAccActive();  
+                e.target.classList.add('js__active');  
+                accPanel.classList.add('acc-active');
+            }
+        })
+    }
+}
+function _removeAccActive() {
+    for(let i = 0; i < accordianContent.length; i += 1) {
+        accordianContent[i].classList.remove('acc-active');
+    }
+}
+function _removePlusMisun() {
+    for(let i = 0; i < accordianID.length; i += 1) {
+        accordianID[i].classList.remove('js__active');
+    }
+}
