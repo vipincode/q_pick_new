@@ -21,6 +21,7 @@
         border-radius: $br-radius;
         box-shadow: 0 0 10px rgba($black, 0.07);
         @extend %transition;
+        flex: 1;
         h3 {
             font-size: em(18px);
             line-height: (25px/18px);
@@ -29,6 +30,13 @@
         }
         a {
             color: $black;
+        }
+    }
+
+    .swiper2 {
+        .swiper-slide {
+          height: auto;
+          display: flex;
         }
     }
 }

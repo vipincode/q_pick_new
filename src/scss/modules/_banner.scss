@@ -10,12 +10,16 @@
         article {
             h2 {
                 font-size: em(32px);
+                line-height: (42px/32px);
                 margin-bottom: 15px;
                 font-weight: $font-weight--lg;
                 position: relative;
                 @include mq(lg) {
                     font-size: em(42px);
                 }
+            }
+            h3 {
+                font-size: em(21px);
             }
             p {
                 font-size: em(18px);

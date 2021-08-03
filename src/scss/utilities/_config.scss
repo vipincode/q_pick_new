@@ -61,6 +61,12 @@ $colors     : (
 		light     : lighten($color--primary, 25%),
 		base      : $color--primary,
 		dark      : darken($color--primary, 6%),
+	),
+	secondary: (
+		x-light   : lighten($color--seconary, 38%),
+		light     : lighten($color--seconary, 12%),
+		base      : $color--seconary,
+		dark      : darken($color--seconary, 6%),
 	)
 );
 

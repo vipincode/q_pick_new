@@ -2,23 +2,61 @@
 //  SERVICES
 // ==========================================================================
 
-.card-article {
-    a {
-        display: inline-block;
-        color: $color--seconary;
-        font-size: em(13px);
-        font-weight: $font-weight--md;
-        text-transform: uppercase;
-        margin-top: 20px;
+.srv {
+    @include e('heading') {
+        font-size: em(28px);
+        line-height: (36px/28px);
+        @extend %bottom-30;
+        @include mq('md') {
+            font-size: em(32px);
+            line-height: (42px/32px);
+        }
     }
-}
-
-.article {
-    display: block;
-    overflow: hidden;
-
-    .btn {
-        color: $white;
-        border: none;
+    @include m('items') {
+        &:nth-child(even) {
+            background-color: $bg-color;
+        }
+    }
+    .sec-heading {
+        @extend %bottom-50;
+    }
+    @include e('business') {
+       @extend %padding-50;
+    }
+    @include e('banking') {
+        @extend %padding-50;
+    }
+    @include e('it') {
+        @extend %padding-50;
+    }
+    @include e('courier') {
+        @extend %padding-50;
+    }
+    @include e('bill') {
+        @extend %padding-50;
+    }
+    @include e('insurance') {
+        @extend %padding-50;
+    }
+    @include e('education') {
+        @extend %padding-50;
+    }
+    @include e('tour') {
+        @extend %padding-50;
+    }
+    @include e('common') {
+        @extend %padding-50;
+    }
+    @include e('card') {
+        padding: 20px;
+        background-color: $white;
+        border-radius: $br-radius;
+        box-shadow: 0 0 2px rgba($black, 0.26);
+        @extend %transition;
+        h3 {
+            font-size: em(18px);
+            line-height: (26px/18px);
+            font-weight: $font-weight--md;
+        }
     }
 }

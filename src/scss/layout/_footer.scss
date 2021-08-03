@@ -6,7 +6,7 @@
     padding: 50px 0px 15px;
     background-color: $black;
     color: $white;
-    @include bg-image($path: url('#{$img--path}/overlay-pattern.png'), $bg-repeat: repeat, $bg-size: 6px);
+    // @include bg-image($path: url('#{$img--path}/overlay-pattern.png'), $bg-repeat: repeat, $bg-size: 6px);
 }
 
 .footer {

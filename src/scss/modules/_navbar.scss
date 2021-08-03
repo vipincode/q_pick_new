@@ -7,15 +7,17 @@
 }
 
 .nav-top {
-    background-color: $bg-color;
+    background-color: color(secondary, x-light);
     @include e('menu') {
-        @include flexy($just: space-between);
-
+        @include flexy($just: space-between, $align: center);
         ul {
             li {
                 display: inline-block;
                 padding: 4px 8px;
             }
+        }
+        a {
+            color: color(secondary, light);
         }
     }
     @include e('socials') {
@@ -131,13 +133,18 @@
     }
 }
 
-.is-sticky {
-    background-color: $white;
-    border-bottom: 1px solid color(grey, x-light);
-    @include mq('lg') {
-        animation: topToBottom $transition ease-in-out;
-    }
-} 
+// .is-sticky {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background-color: $white;
+//     border-bottom: 1px solid color(grey, x-light);
+//     z-index: 999;
+//     @include mq('lg') {
+//         animation: topToBottom $transition ease-in-out;
+//     }
+// } 
 
 @keyframes topToBottom {
     from {

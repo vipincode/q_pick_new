@@ -37,6 +37,9 @@ ul {
 
 img {
 	max-width: 100%;
+	image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
 

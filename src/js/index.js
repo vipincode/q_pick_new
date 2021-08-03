@@ -124,7 +124,7 @@ $backToTop.on('click', function() {
 // STICKY NAV BAR
 // ============================================================
 
-const navbar = document.querySelector("#navbar");
+const navbar = document.querySelector(".navbar");
 
 function myFunction() {
   if (window.pageYOffset >= 100) {
@@ -237,32 +237,6 @@ if(way4) {
 }
 
 // ============================================================
-// READ MORE
-// ============================================================
-
-import 'readmore-js/readmore';
-
-$('.article').readmore({ 
-    speed: 100, 
-    collapsedHeight: 50,
-    heightMargin: 16,
-    blockCSS: 'display: block; width: 100%;',
-    embedCSS: false,
-    startOpen: false,
-    moreLink: '<a href="#">Read more</a>',
-    lessLink: '<a href="#">Close</a>'
-});
-
-// ============================================================
-// LITY JS
-// ============================================================
-
-import "../../node_modules/lity/dist/lity";
-$(document).on('lity:ready', function(event, instance) {
-    console.log('Lightbox ready');
-});
-
-// ============================================================
 // FAQS
 // ============================================================
 
@@ -310,3 +284,7 @@ function _removePlusMisun() {
         accordianID[i].classList.remove('js__active');
     }
 }
+
+// ==========================================================================
+//  SCROM AND MATCH SECTION
+// ==========================================================================
