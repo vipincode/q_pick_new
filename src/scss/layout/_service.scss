@@ -47,7 +47,12 @@
     @include e('common') {
         @extend %padding-50;
     }
+    .srv-main {
+        @include flexy($wrap: wrap);
+    }
     @include e('card') {
+        @include flexy($dir: column);
+        flex: 1;
         padding: 20px;
         background-color: $white;
         border-radius: $br-radius;
