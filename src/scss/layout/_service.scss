@@ -51,6 +51,7 @@
         @include flexy($wrap: wrap);
     }
     @include e('card') {
+        cursor: pointer;
         @include flexy($dir: column);
         flex: 1;
         padding: 20px;

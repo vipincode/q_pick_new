@@ -19,3 +19,25 @@
     outline: none;
     cursor: pointer;
 }
+
+.modal-body {
+    label {
+        font-size: em(15px);
+        font-weight: $font-weight--md;
+    }
+    input {
+        margin-bottom: 0;
+    }
+    textarea {
+        margin-bottom: 6px;
+    }
+    span {
+        font-size: em(13px);
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+.modal-footer {
+    justify-content: start;
+}
